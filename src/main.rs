@@ -13,7 +13,7 @@ fn main() {
     match TcpStream::connect(adress) {
         Ok(mut stream) => {
             println!("Successfully connected to server");
-
+            
             let msg = b"Hello!";
 
             stream.write(msg).unwrap();
